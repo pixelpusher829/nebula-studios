@@ -15,14 +15,16 @@
 		"lucide-react": "^0.555.0",
 		"react": "^19.2.1",
 		"react-dom": "^19.2.1",
-		"react-markdown": "^9.1.0",
+		"react-markdown": "^10.1.0",
 		"react-youtube": "^10.1.0",
 		"tailwindcss": "^4.1.17"
 	},
 	"devDependencies": {
-		"@types/node": "^22.19.1",
+		"@types/node": "^24.10.1",
 		"@vitejs/plugin-react": "^5.1.1",
-		"typescript": "~5.8.3",
-		"vite": "^6.4.1"
+		"prettier": "^3.7.4",
+		"prettier-plugin-tailwindcss": "^0.7.2",
+		"typescript": "~5.9.3",
+		"vite": "^7.2.6"
 	}
 }

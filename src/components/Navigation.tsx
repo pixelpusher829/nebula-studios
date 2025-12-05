@@ -48,7 +48,7 @@ export const Navigation: React.FC = () => {
 						className="flex-shrink-0 flex items-center gap-3 cursor-pointer"
 					>
 						<Logo />
-						<span className="font-display font-bold text-3xl tracking-widest text-white uppercase">
+						<span className="font-display font-bold text-4xl tracking-widest text-white uppercase">
 							NEBULA
 						</span>
 					</a>

@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <Logo />
-              <span className="font-display font-bold text-3xl tracking-widest text-white uppercase">
+              <span className="font-display font-bold text-4xl tracking-widest text-white uppercase">
                 NEBULA
               </span>              
             </div>
