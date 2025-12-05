@@ -1,16 +1,17 @@
 import React, { useState, useEffect, useContext, createContext } from "react";
-import { Navigation } from "./components/Navigation";
-import { Hero } from "./components/Hero";
-import { GamePortfolio } from "./pages/GamePortfolio";
-import { News } from "./pages/News";
-import { StudioLife } from "./pages/StudioLife";
-import { Careers } from "./pages/Careers";
-import { Press } from "./pages/Press";
-import { Contact } from "./pages/Contact";
-import { Footer } from "./components/Footer";
+import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
+import { GamePortfolio } from "@/pages/GamePortfolio";
+import { News } from "@/pages/News";
+import { StudioLife } from "@/pages/StudioLife";
+import { Careers } from "@/pages/Careers";
+import { Press } from "@/pages/Press";
+import { Contact } from "@/pages/Contact";
+import { Home } from "@/pages/Home";
 import { MessageSquare, X } from "lucide-react";
-import { getStudioAssistance } from "./services/geminiService";
-import { ChatMessage } from "./types/types";
+import { getStudioAssistance } from "@/services/geminiService";
+import { ChatMessage } from "@/types/types";
+
 
 // --- Navigation Context & Hook ---
 type Page =
@@ -34,7 +35,7 @@ export const NavigationContext = createContext<NavContextType>({
 
 export const useNavigation = () => useContext(NavigationContext);
 
-// --- Simple Chat Widget ---
+// Chat Widget
 const SupportWidget: React.FC = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -124,7 +125,7 @@ const SupportWidget: React.FC = () => {
 	);
 };
 
-// --- Main App ---
+// Main App
 function App() {
 	const [currentPath, setCurrentPath] = useState<string>("/");
 
@@ -136,7 +137,7 @@ function App() {
 	const renderPage = () => {
 		switch (currentPath) {
 			case "/":
-				return <Hero />;
+				return <Home />;
 			case "/games":
 				return <GamePortfolio />;
 			case "/studio":
@@ -150,7 +151,7 @@ function App() {
 			case "/contact":
 				return <Contact />;
 			default:
-				return <Hero />;
+				return <Home />;
 		}
 	};
 

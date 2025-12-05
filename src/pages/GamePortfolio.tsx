@@ -8,15 +8,18 @@ import {
 	Play,
 	ShoppingCart,
 } from "lucide-react";
-import { Game } from "../types/types";
+import { Game } from "@/types/types";
+import echosOfEternity from "@/images/games/echos-of-eternity.jpg";
+import cyberStrike from "@/images/games/cyber-strike.jpg";
+import starlightDrift from "@/images/games/starlight-drift.jpg";
+import voidWalker from "@/images/games/void-walker.jpg";
 
 const games: Game[] = [
 	{
 		id: "1",
 		title: "ECHOES OF ETERNITY",
 		genre: "Action RPG",
-		image:
-			"https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop",
+		image: `${echosOfEternity}`,
 		rating: 4.9,
 		platforms: ["PC", "PS5"],
 		year: "2024",
@@ -29,7 +32,7 @@ const games: Game[] = [
 		title: "CYBER STRIKE",
 		genre: "Competitive FPS",
 		image:
-			"https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=2070&auto=format&fit=crop",
+			`${cyberStrike}`,
 		rating: 4.7,
 		platforms: ["PC", "XSX", "PS5"],
 		year: "2023",
@@ -46,7 +49,7 @@ const games: Game[] = [
 		title: "STARLIGHT DRIFT",
 		genre: "Sci-Fi Racing",
 		image:
-			"https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop",
+			`${starlightDrift}`,
 		rating: 4.5,
 		platforms: ["PC", "Mobile"],
 		year: "2022",
@@ -59,7 +62,7 @@ const games: Game[] = [
 		title: "VOID WALKER",
 		genre: "Horror Survival",
 		image:
-			"https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=2094&auto=format&fit=crop",
+			`${voidWalker}`,
 		rating: 4.8,
 		platforms: ["PC", "PS5"],
 		year: "2023",
@@ -96,7 +99,7 @@ export const GamePortfolio: React.FC = () => {
 								<img
 									src={game.image}
 									alt={game.title}
-									className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+									className="w-full h-full object-cover object-top  transition-transform duration-700 group-hover:scale-110"
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-studio-card via-transparent to-transparent opacity-80" />
 
