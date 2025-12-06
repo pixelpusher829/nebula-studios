@@ -114,7 +114,7 @@ export const StudioLife: React.FC = () => {
 
           <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
             {/* 4-Image Staggered Asymmetrical Grid */}
-            <div className="relative grid h-[500px] grid-cols-2 gap-4 md:h-[600px] md:gap-6">
+            <div className="relative grid min-h-[500px] grid-cols-2 gap-4 md:min-h-[600px] md:gap-6">
               {/* Column 1 */}
               <div className="flex flex-col gap-6 pt-12">
                 {/* Img 1: Tall */}
