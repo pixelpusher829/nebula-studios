@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import type React from "react";
+import { useState } from "react";
 import {
   Star,
   Monitor,
@@ -8,7 +9,7 @@ import {
   Play,
   ShoppingCart,
 } from "lucide-react";
-import { Game } from "@/types/types";
+import type { Game } from "@/types/types";
 import echosOfEternity from "@/images/games/echos-of-eternity.webp";
 import cyberStrike from "@/images/games/cyber-strike.webp";
 import starlightDrift from "@/images/games/starlight-drift.webp";

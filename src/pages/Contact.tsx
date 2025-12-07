@@ -1,4 +1,4 @@
-import React from 'react';
+import type React from 'react';
 import { Mail, MapPin, Phone, ArrowRight } from 'lucide-react';
 
 export const Contact: React.FC = () => {

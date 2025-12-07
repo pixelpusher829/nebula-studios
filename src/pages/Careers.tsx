@@ -1,14 +1,14 @@
-import React, { useState, useRef } from "react";
+import type React from "react";
+import { useState, useRef } from "react";
 import {
 	ArrowRight,
 	MapPin,
-	Clock,
 	Briefcase,
 	X,
 	Upload,
 	Check,
 } from "lucide-react";
-import { Job } from "@/types/types";
+import type { Job } from "@/types/types";
 import ReactMarkdown from "react-markdown";
 
 const jobs: Job[] = [

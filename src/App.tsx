@@ -1,4 +1,5 @@
-import React, { useContext, createContext, useState } from "react";
+import type React from "react";
+import { useContext, createContext, useState } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -12,7 +13,7 @@ import { Home } from "@/pages/Home";
 import { NotFound } from "@/pages/NotFound";
 import { MessageSquare, X } from "lucide-react";
 import { getStudioAssistance } from "@/services/geminiService";
-import { ChatMessage } from "@/types/types";
+import type { ChatMessage } from "@/types/types";
 import ScrollToTop from "@/components/utils/ScrollToTop";
 
 // --- Navigation Context & Hook ---

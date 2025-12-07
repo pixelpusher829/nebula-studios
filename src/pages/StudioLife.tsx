@@ -1,12 +1,9 @@
-import React from "react";
+import type React from "react";
 import {
-  Users,
-  Trophy,
   Zap,
   Heart,
   Target,
   Lightbulb,
-  User,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import grid1 from "@/images/studio/grid-1.webp";

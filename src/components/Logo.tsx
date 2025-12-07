@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import logo from "@/images/nebula-logo.svg";
 
 export const Logo: React.FC = () => {

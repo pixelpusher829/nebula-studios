@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import type React from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, User } from "lucide-react";
-import { NavItem } from "@/types/types";
+import type { NavItem } from "@/types/types";
 import { useNavigation } from "@/App";
 import { Logo } from "./Logo";
 import { Link } from "react-router-dom";

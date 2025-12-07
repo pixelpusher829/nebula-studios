@@ -1,6 +1,6 @@
-import React from "react";
-import { Download, FileImage, FileText, Palette } from "lucide-react";
-import { PressAsset } from "@/types/types";
+import type React from "react";
+import { Download, FileImage, FileText, } from "lucide-react";
+import type { PressAsset } from "@/types/types";
 import { Logo } from "@/components/Logo";
 
 const assets: PressAsset[] = [
