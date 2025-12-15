@@ -1,8 +1,8 @@
 import type React from "react";
 import { useState, useEffect } from "react";
 import { Menu, X, User } from "lucide-react";
-import type { NavItem } from "@/types/types";
-import { useNavigation } from "@/App";
+import type { NavItem } from "@/shared/types/types";
+import { useNavigation } from "@/app/App";
 import { Logo } from "./Logo";
 import { Link } from "react-router-dom";
 

@@ -1,20 +1,13 @@
 import type React from "react";
 import { useContext, createContext, useState } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import { Navigation } from "@/components/Navigation";
-import { Footer } from "@/components/Footer";
-import { GamePortfolio } from "@/pages/GamePortfolio";
-import { News } from "@/pages/News";
-import { StudioLife } from "@/pages/StudioLife";
-import { Careers } from "@/pages/Careers";
-import { Press } from "@/pages/Press";
-import { Contact } from "@/pages/Contact";
-import { Home } from "@/pages/Home";
-import { NotFound } from "@/pages/NotFound";
 import { MessageSquare, X } from "lucide-react";
-import { getStudioAssistance } from "@/services/geminiService";
-import type { ChatMessage } from "@/types/types";
-import ScrollToTop from "@/components/utils/ScrollToTop";
+import { getStudioAssistance } from "@/shared/services/geminiService";
+import type { ChatMessage } from "@/shared/types/types";
+import ScrollToTop from "@/shared/utils/ScrollToTop";
+import { Navigation } from "@/shared/layout/Navigation";
+import { Footer } from "@/shared/layout/Footer";
+import { GamePortfolio, News, StudioLife, Careers, Press, Contact, Home, NotFound } from "@/pages";
 
 // --- Navigation Context & Hook ---
 interface NavContextType {

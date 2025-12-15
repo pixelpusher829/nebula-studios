@@ -1,23 +1,18 @@
 import type React from "react";
-import {
-  Zap,
-  Heart,
-  Target,
-  Lightbulb,
-} from "lucide-react";
+import { Zap, Heart, Target, Lightbulb } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import grid1 from "@/images/studio/grid-1.webp";
-import grid2 from "@/images/studio/grid-2.webp";
-import grid3 from "@/images/studio/grid-3.webp";
-import grid4 from "@/images/studio/grid-4.webp";
-import sarah from "@/images/studio/profiles/sarah.webp";
-import david from "@/images/studio/profiles/david.webp";
-import elena from "@/images/studio/profiles/elena.webp";
-import marcus from "@/images/studio/profiles/marcus.webp";
-import emily from "@/images/studio/profiles/emily.webp";
-import james from "@/images/studio/profiles/james.webp";
-import aisha from "@/images/studio/profiles/aisha.webp";
-import tom from "@/images/studio/profiles/tom.webp";
+import grid1 from "@/assets/images/studio/grid-1.webp";
+import grid2 from "@/assets/images/studio/grid-2.webp";
+import grid3 from "@/assets/images/studio/grid-3.webp";
+import grid4 from "@/assets/images/studio/grid-4.webp";
+import sarah from "@/assets/images/studio/profiles/sarah.webp";
+import david from "@/assets/images/studio/profiles/david.webp";
+import elena from "@/assets/images/studio/profiles/elena.webp";
+import marcus from "@/assets/images/studio/profiles/marcus.webp";
+import emily from "@/assets/images/studio/profiles/emily.webp";
+import james from "@/assets/images/studio/profiles/james.webp";
+import aisha from "@/assets/images/studio/profiles/aisha.webp";
+import tom from "@/assets/images/studio/profiles/tom.webp";
 
 const teamMembers = [
   {

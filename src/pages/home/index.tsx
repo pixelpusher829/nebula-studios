@@ -13,11 +13,11 @@ import {
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Youtube from "react-youtube";
-import echosOfEternity from "@/images/home/echos-featured.webp";
-import heroVideo from "@/videos/hero-video.webm";
-import heroImage from "@/images/home/hero-image.webp";
-import teamImage from "@/images/home/nebula-team.webp";
-import careersImage from "@/images/home/careers-bg.webp";
+import echosOfEternity from "@/assets/images/home/echos-featured.webp";
+import heroVideo from "@/assets/videos/hero-video.webm";
+import heroImage from "@/assets/images/home/hero-image.webp";
+import teamImage from "@/assets/images/home/nebula-team.webp";
+import careersImage from "@/assets/images/home/careers-bg.webp";
 
 export const Home: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);

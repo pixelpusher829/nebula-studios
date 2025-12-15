@@ -1,7 +1,7 @@
 import type React from "react";
 import { useState } from "react";
 import { Calendar, ArrowUpRight, ArrowLeft } from "lucide-react";
-import type { NewsItem } from "../types/types";
+import type { NewsItem } from "../shared/types/types";
 import ReactMarkdown from "react-markdown";
 
 const news: NewsItem[] = [

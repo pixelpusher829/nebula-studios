@@ -9,11 +9,11 @@ import {
   Play,
   ShoppingCart,
 } from "lucide-react";
-import type { Game } from "@/types/types";
-import echosOfEternity from "@/images/games/echos-of-eternity.webp";
-import cyberStrike from "@/images/games/cyber-strike.webp";
-import starlightDrift from "@/images/games/starlight-drift.webp";
-import voidWalker from "@/images/games/void-walker.webp";
+import type { Game } from "@/shared/types/types";
+import echosOfEternity from "@/assets/images/games/echos-of-eternity.webp";
+import cyberStrike from "@/assets/images/games/cyber-strike.webp";
+import starlightDrift from "@/assets/images/games/starlight-drift.webp";
+import voidWalker from "@/assets/images/games/void-walker.webp";
 
 const games: Game[] = [
   {
