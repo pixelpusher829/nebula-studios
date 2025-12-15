@@ -77,6 +77,10 @@ body {
   @apply text-studio-light mb-8 font-sans text-lg leading-loose;
 }
 
+.careers p, .careers li {
+  @apply text-base; 
+}
+
 .markdown-content ul {
   @apply text-studio-light mb-10 ml-6 list-outside list-disc space-y-2 text-lg leading-relaxed;
 }
