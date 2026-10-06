@@ -1,51 +1,73 @@
+export type Platform = "PC" | "PS5" | "Xbox" | "Switch" | "Mobile" | "VR";
+
+export type GameStatus = "released" | "in-development";
+
+export interface StoreLink {
+	label: string;
+	href: string;
+}
+
 export interface Game {
-  id: string;
-  title: string;
-  genre: string;
-  image: string;
-  rating: number;
-  platforms: string[];
-  year: string;
-  description?: string; // Added for modal
-  features?: string[]; // Added for modal
+	slug: string;
+	title: string;
+	genre: string;
+	tagline: string;
+	image: string;
+	gallery: string[];
+	status: GameStatus;
+	/** Aggregate critic score out of 100 (released games only). */
+	score?: number;
+	platforms: Platform[];
+	year: string;
+	description: string;
+	longDescription: string[];
+	features: string[];
+	accolades?: string[];
+	/** YouTube video ID */
+	trailerId?: string;
+	stores?: StoreLink[];
 }
 
 export interface NewsItem {
-  id: string;
-  title: string;
-  category: string;
-  date: string;
-  image: string;
-  excerpt: string;
-  content: string; // Markdown content
+	slug: string;
+	title: string;
+	category: string;
+	/** ISO date, YYYY-MM-DD */
+	date: string;
+	author: string;
+	image: string;
+	excerpt: string;
+	content: string; // Markdown content
 }
 
 export interface NavItem {
-  label: string;
-  href: string;
+	label: string;
+	href: string;
 }
 
 export interface ChatMessage {
-  id: string;
-  role: 'user' | 'model';
-  text: string;
-  timestamp: number;
+	id: string;
+	role: "user" | "model";
+	text: string;
 }
 
 export interface Job {
-  id: string;
-  title: string;
-  department: string;
-  location: string;
-  type: string;
-  description: string; // Markdown content
+	slug: string;
+	title: string;
+	department: string;
+	location: string;
+	type: "Full-time" | "Contract" | "Internship";
+	salary?: string;
+	summary: string;
+	description: string; // Markdown content
 }
 
 export interface PressAsset {
-  id: string;
-  title: string;
-  type: 'Logo' | 'Kit' | 'Guide';
-  size: string;
-  format: string;
-  thumbnail: string; // CSS color or image URL
+	title: string;
+	description: string;
+	format: string;
+	thumbnail: string;
+	href: string;
+	/** Light thumbnails get a dark overlay treatment on hover */
+	light?: boolean;
 }

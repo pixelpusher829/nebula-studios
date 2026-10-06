@@ -1,0 +1,12 @@
+{
+	"name": "Nebula Studios",
+	"short_name": "Nebula",
+	"icons": [
+		{ "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+		{ "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" }
+	],
+	"theme_color": "#0b0d17",
+	"background_color": "#0b0d17",
+	"display": "standalone",
+	"start_url": "/"
+}

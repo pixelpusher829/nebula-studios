@@ -1,19 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg" href="/favicon.svg">
-		<title>NEBULA STUDIOS | We Create Worlds</title>
+		<meta name="theme-color" content="#0b0d17" />
+		<meta name="color-scheme" content="dark" />
+
+		<!-- Defaults for crawlers that don't run JavaScript; each page overrides these at runtime. -->
+		<title data-default-seo>Nebula Studios | We Build Universes</title>
+		<meta data-default-seo
+			name="description"
+			content="Nebula Studios is an independent game developer crafting award-winning action RPGs, competitive shooters and genre-defining worlds for PC and console."
+		/>
+		<meta data-default-seo property="og:site_name" content="Nebula Studios" />
+		<meta data-default-seo property="og:type" content="website" />
+		<meta data-default-seo property="og:title" content="Nebula Studios | We Build Universes" />
+		<meta data-default-seo
+			property="og:description"
+			content="Independent game studio behind Echoes of Eternity, Cyber Strike, Void Walker and Starlight Drift."
+		/>
+		<meta data-default-seo property="og:image" content="%VITE_SITE_URL%/og-image.jpg" />
+		<meta data-default-seo name="twitter:card" content="summary_large_image" />
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="/src/app/global.css" />
 	</head>
 	<body>
+		<noscript>
+			<p style="padding: 2rem; color: #fff; background: #0b0d17; font-family: sans-serif">
+				Nebula Studios works best with JavaScript enabled. Contact us at hello@nebulastudios.com.
+			</p>
+		</noscript>
 		<div id="root"></div>
 		<script type="module" src="/src/index.tsx"></script>
 	</body>
