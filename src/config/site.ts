@@ -11,7 +11,7 @@ export const site = {
 	tagline: "We Build Universes",
 	description:
 		"Nebula Studios is an independent game developer crafting award-winning action RPGs, competitive shooters and genre-defining worlds for PC and console.",
-	url: import.meta.env.VITE_SITE_URL || "https://nebulastudios.com",
+	url: import.meta.env.VITE_SITE_URL || "https://nebula-studios.vercel.app",
 	founded: 2010,
 	headcount: "200+",
 

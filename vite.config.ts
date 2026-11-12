@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig, loadEnv, type Plugin } from "vite";
 
-const DEFAULT_SITE_URL = "https://nebulastudios.com";
+const DEFAULT_SITE_URL = "https://nebula-studios.vercel.app";
 
 /** Reads `slug: "..."` entries from a data file without importing it (data files import images). */
 const slugsFrom = (file: string) =>
